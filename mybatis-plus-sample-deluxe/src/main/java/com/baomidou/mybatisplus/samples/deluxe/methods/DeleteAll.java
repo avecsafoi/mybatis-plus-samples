@@ -1,9 +1,10 @@
 package com.baomidou.mybatisplus.samples.deluxe.methods;
 
-import com.baomidou.mybatisplus.core.injector.AbstractMethod;
-import com.baomidou.mybatisplus.core.metadata.TableInfo;
 import org.apache.ibatis.mapping.MappedStatement;
 import org.apache.ibatis.mapping.SqlSource;
+
+import com.baomidou.mybatisplus.core.injector.AbstractMethod;
+import com.baomidou.mybatisplus.core.metadata.TableInfo;
 
 /**
  * 删除全部

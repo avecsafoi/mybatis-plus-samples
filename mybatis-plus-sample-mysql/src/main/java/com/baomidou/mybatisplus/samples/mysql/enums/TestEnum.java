@@ -1,6 +1,7 @@
 package com.baomidou.mybatisplus.samples.mysql.enums;
 
 import com.baomidou.mybatisplus.annotation.IEnum;
+
 import lombok.Getter;
 
 /**

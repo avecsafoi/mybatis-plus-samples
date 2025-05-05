@@ -1,13 +1,13 @@
 package com.baomidou.mybatisplus.samples.typehandler.entity;
 
+import java.util.List;
+
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.handlers.FastjsonTypeHandler;
-import com.baomidou.mybatisplus.samples.typehandler.WalletListTypeHandler;
+
 import lombok.Data;
 import lombok.experimental.Accessors;
-
-import java.util.List;
 
 /**
  * <p>

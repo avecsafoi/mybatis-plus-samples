@@ -1,12 +1,13 @@
 package com.baomidou.mybatisplus.samples.pagination.model;
 
+import java.util.List;
+
 import com.baomidou.mybatisplus.samples.pagination.entity.Children;
 import com.baomidou.mybatisplus.samples.pagination.entity.User;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
-
-import java.util.List;
 
 /**
  * @author miemie

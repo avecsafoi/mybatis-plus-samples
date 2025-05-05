@@ -1,5 +1,12 @@
 package com.baomidou;
 
+import java.util.List;
+import java.util.Set;
+
+import org.apache.ibatis.builder.MapperBuilderAssistant;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+
 import com.baomidou.mybatisplus.core.injector.AbstractMethod;
 import com.baomidou.mybatisplus.core.injector.DefaultSqlInjector;
 import com.baomidou.mybatisplus.core.injector.ISqlInjector;
@@ -9,12 +16,6 @@ import com.baomidou.mybatisplus.core.metadata.TableInfoHelper;
 import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 import com.baomidou.mybatisplus.core.toolkit.GlobalConfigUtils;
 import com.baomidou.mybatisplus.core.toolkit.ReflectionKit;
-import org.apache.ibatis.builder.MapperBuilderAssistant;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
-
-import java.util.List;
-import java.util.Set;
 
 public class MybatisPlusConfig {
 

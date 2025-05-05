@@ -1,5 +1,15 @@
 package com.baomidou.mybatisplus.samples.crud;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
+import java.util.List;
+import java.util.Map;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -9,15 +19,6 @@ import com.baomidou.mybatisplus.samples.crud.entity.User;
 import com.baomidou.mybatisplus.samples.crud.entity.User2;
 import com.baomidou.mybatisplus.samples.crud.mapper.User2Mapper;
 import com.baomidou.mybatisplus.samples.crud.mapper.UserMapper;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-
-import java.util.List;
-import java.util.Map;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * <p>

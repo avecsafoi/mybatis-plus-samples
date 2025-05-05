@@ -1,5 +1,10 @@
 package com.baomidou.mybatisplus;
 
+import static com.baomidou.mybatisplus.generator.config.builder.GeneratorBuilder.globalConfigBuilder;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import com.baomidou.mybatisplus.generator.AutoGenerator;
 import com.baomidou.mybatisplus.generator.config.DataSourceConfig;
 import com.baomidou.mybatisplus.generator.config.builder.ConfigBuilder;
@@ -7,11 +12,6 @@ import com.baomidou.mybatisplus.generator.config.po.TableField;
 import com.baomidou.mybatisplus.generator.config.po.TableInfo;
 import com.baomidou.mybatisplus.generator.config.rules.DbColumnType;
 import com.baomidou.mybatisplus.generator.query.DefaultQuery;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import static com.baomidou.mybatisplus.generator.config.builder.GeneratorBuilder.globalConfigBuilder;
 
 public class GeneratorCode {
 

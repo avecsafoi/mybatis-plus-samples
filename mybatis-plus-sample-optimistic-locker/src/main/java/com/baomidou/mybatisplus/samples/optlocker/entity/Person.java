@@ -1,10 +1,11 @@
 package com.baomidou.mybatisplus.samples.optlocker.entity;
 
+import java.time.LocalDateTime;
+
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.Version;
-import lombok.Data;
 
-import java.time.LocalDateTime;
+import lombok.Data;
 
 @Data
 @TableName("sys_person")

@@ -1,13 +1,19 @@
 package com.baomidou.mybatisplus.samples.mysql.entity;
 
-import com.baomidou.mybatisplus.annotation.*;
-import com.baomidou.mybatisplus.samples.mysql.enums.TestEnum;
-import lombok.Data;
-import lombok.experimental.Accessors;
-import org.apache.ibatis.type.JdbcType;
-
 import java.io.Serializable;
 import java.time.LocalDateTime;
+
+import org.apache.ibatis.type.JdbcType;
+
+import com.baomidou.mybatisplus.annotation.FieldFill;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.Version;
+import com.baomidou.mybatisplus.samples.mysql.enums.TestEnum;
+
+import lombok.Data;
+import lombok.experimental.Accessors;
 
 /**
  * 包含功能:

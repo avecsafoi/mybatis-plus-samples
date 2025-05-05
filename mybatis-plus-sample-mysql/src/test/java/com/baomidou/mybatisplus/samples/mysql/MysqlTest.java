@@ -1,9 +1,11 @@
 package com.baomidou.mybatisplus.samples.mysql;
 
-import com.baomidou.mybatisplus.extension.ddl.DdlScript;
-import com.baomidou.mybatisplus.samples.mysql.entity.TestData;
-import com.baomidou.mybatisplus.samples.mysql.enums.TestEnum;
-import com.baomidou.mybatisplus.samples.mysql.mapper.TestDataMapper;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.io.StringReader;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
@@ -14,11 +16,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.io.StringReader;
-import java.util.ArrayList;
-import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import com.baomidou.mybatisplus.extension.ddl.DdlScript;
+import com.baomidou.mybatisplus.samples.mysql.entity.TestData;
+import com.baomidou.mybatisplus.samples.mysql.enums.TestEnum;
+import com.baomidou.mybatisplus.samples.mysql.mapper.TestDataMapper;
 
 @Disabled
 @SpringBootTest

@@ -1,15 +1,16 @@
 package com.baomidou.mybatisplus.samples.dytablename;
 
-import com.baomidou.mybatisplus.samples.dytablename.config.RequestDataHelper;
-import com.baomidou.mybatisplus.samples.dytablename.entity.User;
-import com.baomidou.mybatisplus.samples.dytablename.mapper.UserMapper;
+import java.util.HashMap;
+
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.HashMap;
+import com.baomidou.mybatisplus.samples.dytablename.config.RequestDataHelper;
+import com.baomidou.mybatisplus.samples.dytablename.entity.User;
+import com.baomidou.mybatisplus.samples.dytablename.mapper.UserMapper;
 
 /**
  * <p>

@@ -1,11 +1,12 @@
 package com.baomidou.mybatisplus.samples.sequence;
 
-import com.baomidou.mybatisplus.samples.sequence.entity.User;
-import com.baomidou.mybatisplus.samples.sequence.mapper.UserMapper;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import com.baomidou.mybatisplus.samples.sequence.entity.User;
+import com.baomidou.mybatisplus.samples.sequence.mapper.UserMapper;
 
 /**
  * <p>

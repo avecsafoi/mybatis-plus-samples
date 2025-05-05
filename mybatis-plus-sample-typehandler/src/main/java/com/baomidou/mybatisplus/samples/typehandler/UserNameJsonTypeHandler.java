@@ -1,17 +1,19 @@
 package com.baomidou.mybatisplus.samples.typehandler;
 
-import com.alibaba.fastjson.JSON;
-import com.baomidou.mybatisplus.samples.typehandler.entity.User;
-import lombok.extern.slf4j.Slf4j;
+import java.sql.CallableStatement;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 import org.apache.ibatis.type.BaseTypeHandler;
 import org.apache.ibatis.type.JdbcType;
 import org.apache.ibatis.type.MappedJdbcTypes;
 import org.apache.ibatis.type.MappedTypes;
 
-import java.sql.CallableStatement;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import com.alibaba.fastjson2.JSON;
+import com.baomidou.mybatisplus.samples.typehandler.entity.User;
+
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * 只做演示其它方法未实现

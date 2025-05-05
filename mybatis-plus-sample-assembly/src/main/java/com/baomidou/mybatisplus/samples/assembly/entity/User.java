@@ -1,6 +1,7 @@
 package com.baomidou.mybatisplus.samples.assembly.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+
 import lombok.Data;
 
 /**

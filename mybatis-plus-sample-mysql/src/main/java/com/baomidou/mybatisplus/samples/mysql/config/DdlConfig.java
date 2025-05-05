@@ -1,10 +1,11 @@
 package com.baomidou.mybatisplus.samples.mysql.config;
 
-import com.baomidou.mybatisplus.extension.ddl.DdlScript;
+import javax.sql.DataSource;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import javax.sql.DataSource;
+import com.baomidou.mybatisplus.extension.ddl.DdlScript;
 
 @Configuration
 public class DdlConfig {

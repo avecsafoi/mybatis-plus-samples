@@ -1,9 +1,10 @@
 package com.baomidou.mybatisplus.samples.mysql.config;
 
-import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
+import java.time.LocalDateTime;
+
 import org.apache.ibatis.reflection.MetaObject;
 
-import java.time.LocalDateTime;
+import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 
 /**
  * 测试，自定义元对象字段填充控制器，实现公共字段自动写入

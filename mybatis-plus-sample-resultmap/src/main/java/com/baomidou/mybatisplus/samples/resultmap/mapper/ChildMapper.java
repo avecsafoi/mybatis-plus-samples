@@ -1,10 +1,11 @@
 package com.baomidou.mybatisplus.samples.resultmap.mapper;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.baomidou.mybatisplus.samples.resultmap.entity.Child;
+import java.util.List;
+
 import org.apache.ibatis.annotations.Select;
 
-import java.util.List;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.baomidou.mybatisplus.samples.resultmap.entity.Child;
 
 /**
  * @author miemie

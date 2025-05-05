@@ -1,6 +1,7 @@
 package com.baomidou.mybatisplus.samples.pagination.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+
 import lombok.Data;
 
 /**

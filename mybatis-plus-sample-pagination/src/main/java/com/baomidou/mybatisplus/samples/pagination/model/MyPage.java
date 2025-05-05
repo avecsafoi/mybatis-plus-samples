@@ -1,6 +1,7 @@
 package com.baomidou.mybatisplus.samples.pagination.model;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;

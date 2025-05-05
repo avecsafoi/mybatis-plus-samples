@@ -1,8 +1,7 @@
 package com.baomidou.mybatisplus.samples.quickstart.springmvc;
 
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.baomidou.mybatisplus.samples.quickstart.springmvc.entity.User;
-import com.baomidou.mybatisplus.samples.quickstart.springmvc.mapper.UserMapper;
+import java.util.List;
+
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.runner.RunWith;
@@ -11,7 +10,9 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import java.util.List;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.baomidou.mybatisplus.samples.quickstart.springmvc.entity.User;
+import com.baomidou.mybatisplus.samples.quickstart.springmvc.mapper.UserMapper;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @Sql(scripts = {"classpath:db/schema-h2.sql","classpath:db/data-h2.sql"})

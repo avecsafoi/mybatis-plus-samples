@@ -1,8 +1,8 @@
 package com.baomidou.mybatisplus.samples.dytablename.config;
 
-import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
-
 import java.util.Map;
+
+import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
 
 /**
  * 请求参数传递辅助类

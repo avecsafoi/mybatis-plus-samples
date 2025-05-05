@@ -1,10 +1,11 @@
 package com.baomidou.mybatisplus.samples.resultmap.entity;
 
+import java.util.List;
+
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
-import lombok.Data;
 
-import java.util.List;
+import lombok.Data;
 
 /**
  * @author miemie

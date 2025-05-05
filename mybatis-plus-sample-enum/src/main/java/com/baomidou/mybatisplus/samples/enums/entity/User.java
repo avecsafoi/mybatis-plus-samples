@@ -1,7 +1,12 @@
 package com.baomidou.mybatisplus.samples.enums.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.samples.enums.enums.*;
+import com.baomidou.mybatisplus.samples.enums.enums.AgeEnum;
+import com.baomidou.mybatisplus.samples.enums.enums.GenderEnum;
+import com.baomidou.mybatisplus.samples.enums.enums.GradeEnum;
+import com.baomidou.mybatisplus.samples.enums.enums.StrEnum;
+import com.baomidou.mybatisplus.samples.enums.enums.UserState;
+
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;

@@ -1,15 +1,17 @@
 package com.baomidou.samples.injector;
 
-import com.baomidou.samples.injector.entity.Student;
-import com.baomidou.samples.injector.mapper.StudentMapper;
-import lombok.extern.slf4j.Slf4j;
+import java.util.List;
+import java.util.stream.Collectors;
+
 import org.assertj.core.util.Lists;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.List;
-import java.util.stream.Collectors;
+import com.baomidou.samples.injector.entity.Student;
+import com.baomidou.samples.injector.mapper.StudentMapper;
+
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * 自定义注入测试

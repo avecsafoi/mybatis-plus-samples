@@ -1,12 +1,13 @@
 package com.baomidou.mybatisplus.samples.jsonb.entity;
 
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableName;
-import lombok.Getter;
-import lombok.Setter;
-
 import java.io.Serializable;
 import java.util.List;
+
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableName;
+
+import lombok.Getter;
+import lombok.Setter;
 
 @Getter
 @Setter

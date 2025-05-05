@@ -1,5 +1,14 @@
 package com.baomidou.mybatisplus.samples.association;
 
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -8,14 +17,6 @@ import com.baomidou.mybatisplus.samples.association.entity.Company;
 import com.baomidou.mybatisplus.samples.association.entity.User;
 import com.baomidou.mybatisplus.samples.association.mapper.CompanyMapper;
 import com.baomidou.mybatisplus.samples.association.service.IUserService;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 @SpringBootTest
 public class AssociationTest {

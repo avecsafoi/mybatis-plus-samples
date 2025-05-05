@@ -1,14 +1,16 @@
 package com.baomidou.mybatisplus.samples.jsonb.entity;
 
-import com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler;
-import lombok.extern.slf4j.Slf4j;
+import java.lang.reflect.Field;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
 import org.apache.ibatis.type.JdbcType;
 import org.apache.ibatis.type.MappedTypes;
 import org.postgresql.util.PGobject;
 
-import java.lang.reflect.Field;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
+import com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler;
+
+import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @MappedTypes({Object.class})

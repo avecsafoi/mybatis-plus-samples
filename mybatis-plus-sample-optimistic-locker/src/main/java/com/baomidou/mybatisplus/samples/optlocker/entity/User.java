@@ -2,6 +2,7 @@ package com.baomidou.mybatisplus.samples.optlocker.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.Version;
+
 import lombok.Data;
 
 @Data

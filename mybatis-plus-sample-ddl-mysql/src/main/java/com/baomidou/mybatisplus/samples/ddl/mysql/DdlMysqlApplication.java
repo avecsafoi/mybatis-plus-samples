@@ -1,15 +1,16 @@
 package com.baomidou.mybatisplus.samples.ddl.mysql;
 
-import com.baomidou.mybatisplus.autoconfigure.DdlApplicationRunner;
-import com.baomidou.mybatisplus.extension.ddl.DdlScriptErrorHandler;
-import com.baomidou.mybatisplus.extension.ddl.IDdl;
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import java.util.List;
+import com.baomidou.mybatisplus.autoconfigure.DdlApplicationRunner;
+import com.baomidou.mybatisplus.extension.ddl.DdlScriptErrorHandler;
+import com.baomidou.mybatisplus.extension.ddl.IDdl;
 
 @SpringBootApplication
 public class DdlMysqlApplication {

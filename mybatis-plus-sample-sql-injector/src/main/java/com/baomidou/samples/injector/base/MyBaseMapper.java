@@ -1,15 +1,16 @@
 package com.baomidou.samples.injector.base;
 
+import java.io.Serializable;
+import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
+
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.core.toolkit.Constants;
 import com.baomidou.mybatisplus.extension.conditions.query.LambdaQueryChainWrapper;
 import com.baomidou.mybatisplus.extension.conditions.query.QueryChainWrapper;
 import com.baomidou.mybatisplus.extension.conditions.update.LambdaUpdateChainWrapper;
 import com.baomidou.mybatisplus.extension.conditions.update.UpdateChainWrapper;
-import org.apache.ibatis.annotations.Param;
-
-import java.io.Serializable;
-import java.util.List;
 
 /**
  * @author K

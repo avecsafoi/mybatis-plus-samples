@@ -1,11 +1,11 @@
 package com.baomidou.mybatisplus.samples.typehandler;
 
+import java.io.IOException;
+import java.util.List;
+
 import com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler;
 import com.baomidou.mybatisplus.samples.typehandler.entity.Wallet;
 import com.fasterxml.jackson.core.type.TypeReference;
-
-import java.io.IOException;
-import java.util.List;
 
 /**
  * 自定义复杂类型处理器<br/>

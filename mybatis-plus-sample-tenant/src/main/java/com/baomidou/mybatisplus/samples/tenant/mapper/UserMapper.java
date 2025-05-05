@@ -1,10 +1,11 @@
 package com.baomidou.mybatisplus.samples.tenant.mapper;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.baomidou.mybatisplus.samples.tenant.entity.User;
+import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
-import java.util.List;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.baomidou.mybatisplus.samples.tenant.entity.User;
 
 /**
  * <p>

@@ -1,18 +1,23 @@
 package com.baomidou.mybatisplus.samples.enums;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.samples.enums.entity.User;
-import com.baomidou.mybatisplus.samples.enums.enums.*;
-import com.baomidou.mybatisplus.samples.enums.mapper.UserMapper;
+import static org.assertj.core.api.Assertions.assertThat;
+
+import java.util.List;
+import java.util.Optional;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.List;
-import java.util.Optional;
-
-import static org.assertj.core.api.Assertions.assertThat;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.samples.enums.entity.User;
+import com.baomidou.mybatisplus.samples.enums.enums.AgeEnum;
+import com.baomidou.mybatisplus.samples.enums.enums.GenderEnum;
+import com.baomidou.mybatisplus.samples.enums.enums.GradeEnum;
+import com.baomidou.mybatisplus.samples.enums.enums.StrEnum;
+import com.baomidou.mybatisplus.samples.enums.enums.UserState;
+import com.baomidou.mybatisplus.samples.enums.mapper.UserMapper;
 
 /**
  * <p>

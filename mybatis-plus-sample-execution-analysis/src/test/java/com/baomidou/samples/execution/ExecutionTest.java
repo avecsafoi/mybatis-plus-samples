@@ -1,15 +1,17 @@
 package com.baomidou.samples.execution;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
-import com.baomidou.samples.execution.entity.Student;
-import com.baomidou.samples.execution.mapper.StudentMapper;
-import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mybatis.spring.MyBatisSystemException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.toolkit.CollectionUtils;
+import com.baomidou.samples.execution.entity.Student;
+import com.baomidou.samples.execution.mapper.StudentMapper;
+
+import lombok.extern.slf4j.Slf4j;
 
 /**
  * 执行分析测试

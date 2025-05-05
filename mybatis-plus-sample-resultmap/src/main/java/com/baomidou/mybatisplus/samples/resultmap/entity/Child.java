@@ -2,6 +2,7 @@ package com.baomidou.mybatisplus.samples.resultmap.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
+
 import lombok.Data;
 
 /**

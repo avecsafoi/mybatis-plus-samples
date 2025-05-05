@@ -1,9 +1,10 @@
 package com.baomidou.mybatisplus.samples.association.entity;
 
-import com.baomidou.mybatisplus.annotation.TableName;
-import lombok.Data;
-
 import java.util.List;
+
+import com.baomidou.mybatisplus.annotation.TableName;
+
+import lombok.Data;
 
 @Data
 @TableName("company")

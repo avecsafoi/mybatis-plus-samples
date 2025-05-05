@@ -1,19 +1,20 @@
 package com.baomidou.mybatisplus.samples.deluxe;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.baomidou.mybatisplus.samples.deluxe.entity.User;
-import com.baomidou.mybatisplus.samples.deluxe.mapper.UserMapper;
-import com.baomidou.mybatisplus.samples.deluxe.model.UserPage;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.CollectionUtils;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.baomidou.mybatisplus.samples.deluxe.entity.User;
+import com.baomidou.mybatisplus.samples.deluxe.mapper.UserMapper;
+import com.baomidou.mybatisplus.samples.deluxe.model.UserPage;
 
 /**
  * @author miemie

@@ -1,10 +1,11 @@
 package com.baomidou.samples.performance;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.samples.performance.mapper.StudentMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.samples.performance.mapper.StudentMapper;
 
 /**
  * 性能分析测试

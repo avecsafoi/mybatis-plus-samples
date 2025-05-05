@@ -1,11 +1,12 @@
 package com.baomidou.samples.metainfo.mapper;
 
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.baomidou.samples.metainfo.entity.User;
+import java.util.List;
+
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-import java.util.List;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.baomidou.samples.metainfo.entity.User;
 
 /**
  * 用户Mapper层

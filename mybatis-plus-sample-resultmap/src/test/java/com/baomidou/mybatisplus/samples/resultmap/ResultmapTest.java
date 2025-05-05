@@ -1,19 +1,21 @@
 package com.baomidou.mybatisplus.samples.resultmap;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
+import java.util.List;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
 import com.baomidou.mybatisplus.samples.resultmap.entity.Child;
 import com.baomidou.mybatisplus.samples.resultmap.entity.Man;
 import com.baomidou.mybatisplus.samples.resultmap.entity.Woman;
 import com.baomidou.mybatisplus.samples.resultmap.mapper.ChildMapper;
 import com.baomidou.mybatisplus.samples.resultmap.mapper.ManMapper;
 import com.baomidou.mybatisplus.samples.resultmap.mapper.WomanMapper;
+
 import lombok.extern.slf4j.Slf4j;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-
-import java.util.List;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * @author miemie

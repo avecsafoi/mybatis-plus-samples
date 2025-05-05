@@ -1,18 +1,19 @@
 package com.baomidou.mybatisplus.samples.wrapper;
 
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
-import com.baomidou.mybatisplus.samples.wrapper.entity.User;
-import com.baomidou.mybatisplus.samples.wrapper.mapper.RoleMapper;
-import com.baomidou.mybatisplus.samples.wrapper.mapper.UserMapper;
+import java.util.List;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.util.CollectionUtils;
 
-import java.util.List;
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
+import com.baomidou.mybatisplus.samples.wrapper.entity.User;
+import com.baomidou.mybatisplus.samples.wrapper.mapper.RoleMapper;
+import com.baomidou.mybatisplus.samples.wrapper.mapper.UserMapper;
 
 /**
  * @author miemie

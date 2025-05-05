@@ -1,12 +1,13 @@
 package com.baomidou.mybatisplus.samples.quickstart.springmvc;
 
-import com.baomidou.mybatisplus.annotation.DbType;
-import com.baomidou.mybatisplus.core.config.GlobalConfig;
-import com.baomidou.mybatisplus.core.incrementer.IKeyGenerator;
+import java.util.Arrays;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.util.Arrays;
+import com.baomidou.mybatisplus.annotation.DbType;
+import com.baomidou.mybatisplus.core.config.GlobalConfig;
+import com.baomidou.mybatisplus.core.incrementer.IKeyGenerator;
 
 @Configuration
 public class MpConfig {

@@ -1,15 +1,16 @@
 package com.baomidou.samples;
 
-import com.baomidou.samples.entity.User;
-import com.baomidou.samples.mapper.UserMapper;
-import com.baomidou.samples.service.UserService;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.baomidou.samples.entity.User;
+import com.baomidou.samples.mapper.UserMapper;
+import com.baomidou.samples.service.UserService;
 
 /**
  * @author nieqiuqiu 2019/11/30

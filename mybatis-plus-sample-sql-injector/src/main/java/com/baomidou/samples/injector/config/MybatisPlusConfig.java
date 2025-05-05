@@ -1,8 +1,9 @@
 package com.baomidou.samples.injector.config;
 
-import com.baomidou.samples.injector.base.MySqlInjector;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import com.baomidou.samples.injector.base.MySqlInjector;
 
 /**
  * @author K

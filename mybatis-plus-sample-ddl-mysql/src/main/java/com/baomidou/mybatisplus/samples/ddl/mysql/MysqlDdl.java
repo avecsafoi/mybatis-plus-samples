@@ -1,10 +1,11 @@
 package com.baomidou.mybatisplus.samples.ddl.mysql;
 
-import com.baomidou.mybatisplus.extension.ddl.SimpleDdl;
-import org.springframework.stereotype.Component;
-
 import java.util.Arrays;
 import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+import com.baomidou.mybatisplus.extension.ddl.SimpleDdl;
 
 @Component
 public class MysqlDdl extends SimpleDdl {

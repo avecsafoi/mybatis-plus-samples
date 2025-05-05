@@ -1,5 +1,16 @@
 package com.baomidou.mybatisplus.samples.mysql.config;
 
+import java.util.List;
+
+import javax.sql.DataSource;
+
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.type.JdbcType;
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
+
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.core.MybatisConfiguration;
 import com.baomidou.mybatisplus.core.config.GlobalConfig;
@@ -14,15 +25,6 @@ import com.baomidou.mybatisplus.extension.plugins.inner.OptimisticLockerInnerInt
 import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
 import com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean;
 import com.baomidou.mybatisplus.samples.mysql.injector.MysqlInsertAllBatch;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.type.JdbcType;
-import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
-
-import javax.sql.DataSource;
-import java.util.List;
 
 /**
  * Mybatis Plus Config

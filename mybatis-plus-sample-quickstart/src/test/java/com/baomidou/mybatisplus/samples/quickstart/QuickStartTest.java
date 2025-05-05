@@ -1,13 +1,14 @@
 package com.baomidou.mybatisplus.samples.quickstart;
 
-import com.baomidou.mybatisplus.samples.quickstart.entity.SysUser;
-import com.baomidou.mybatisplus.samples.quickstart.mapper.SysUserMapper;
+import java.util.List;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.List;
+import com.baomidou.mybatisplus.samples.quickstart.entity.SysUser;
+import com.baomidou.mybatisplus.samples.quickstart.mapper.SysUserMapper;
 
 @SpringBootTest
 public class QuickStartTest {
