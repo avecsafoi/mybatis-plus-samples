@@ -182,4 +182,10 @@ public interface IPage<T> extends Serializable {
     default String countId() {
         return null;
     }
+    
+    PageType pageType();
+    
+    IPage<T> pageType(PageType pageType);
+    
+    public static enum PageType { OFFSET, NEXTKEY, ORDERBY }
 }

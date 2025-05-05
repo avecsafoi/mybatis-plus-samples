@@ -15,15 +15,17 @@
  */
 package com.baomidou.mybatisplus.extension.plugins.pagination;
 
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.core.metadata.OrderItem;
-import lombok.Setter;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.function.Predicate;
+
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.core.metadata.OrderItem;
+
+import avecsafoi.lupin.lang.util.StringU;
+import lombok.Setter;
 
 /**
  * 简单分页模型
@@ -294,19 +296,14 @@ public class Page<T> implements IPage<T> {
     }
 
     @Override
-    public String toString() {
-        return "Page{" +
-            "records=" + records +
-            ", total=" + total +
-            ", size=" + size +
-            ", current=" + current +
-            ", orders=" + orders +
-            ", optimizeCountSql=" + optimizeCountSql +
-            ", searchCount=" + searchCount +
-            ", optimizeJoinOfCountSql=" + optimizeJoinOfCountSql +
-            ", maxLimit=" + maxLimit +
-            ", countId='" + countId + '\'' +
-            '}';
-    }
+    public String toString() { return StringU.toString(this); }
+    
+    private PageType pageType;
+    
+    @Override
+    public PageType pageType() { return pageType; }
+    
+    @Override
+    public IPage<T> pageType(PageType pageType) { this.pageType = pageType; return this; }
 
 }

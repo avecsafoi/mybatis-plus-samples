@@ -16,8 +16,11 @@
 package com.baomidou.mybatisplus.core.metadata;
 
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
+
+import avecsafoi.lupin.lang.util.StringU;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 import java.util.Arrays;
@@ -32,6 +35,7 @@ import java.util.stream.Collectors;
  */
 @Getter
 @Setter
+@Accessors(chain = true)
 public class OrderItem implements Serializable {
     private static final long serialVersionUID = 1L;
 
@@ -43,6 +47,10 @@ public class OrderItem implements Serializable {
      * 是否正序排列，默认 true
      */
     private boolean asc = true;
+    /**
+     * Order by value for consecutive query 
+     */
+    private Object value;
 
     public static OrderItem asc(String column) {
         return build(column, true);
@@ -50,6 +58,14 @@ public class OrderItem implements Serializable {
 
     public static OrderItem desc(String column) {
         return build(column, false);
+    }
+    
+    public static OrderItem asc(String column, Object value) {
+        return build(column, true).setValue(value);
+    }
+
+    public static OrderItem desc(String column, Object value) {
+        return build(column, false).setValue(value);
     }
 
     public static List<OrderItem> ascs(String... columns) {
@@ -76,10 +92,7 @@ public class OrderItem implements Serializable {
 
     @Override
     public String toString() {
-        return "OrderItem{" +
-            "column='" + column + '\'' +
-            ", asc=" + asc +
-            '}';
+        return StringU.toString(this);
     }
 
 }
