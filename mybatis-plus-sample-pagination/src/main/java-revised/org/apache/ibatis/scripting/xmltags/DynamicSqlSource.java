@@ -66,7 +66,8 @@ public class DynamicSqlSource implements SqlSource {
         SqlSourceBuilder            sqlSourceParser = new SqlSourceBuilder(configuration);
         Class<?>                    parameterType   = parameterObject == null ? Object.class : parameterObject.getClass();
         Map.Entry<String, IPage<?>> pe              = ParameterUtils.findPageEntry(parameterObject);
-        IPage<?>                    page            = pe.getValue();
+        IPage<?>                    page            = pe == null ? null : pe.getValue();
+        String                      name            = pe == null ? null : pe.getKey();
         String                      sql             = context.getSql();
         
         if (page != null && !page.isFirst() && page.pageType() == PageType.ORDERS) {
@@ -82,10 +83,10 @@ public class DynamicSqlSource implements SqlSource {
             
             Select selectBody = parseSql(sql);
             if (selectBody instanceof PlainSelect plainSelect) {
-                addWhere(plainSelect, page, pe.getKey());
+                addWhere(plainSelect, page, name);
                 sql = plainSelect.toString();
             } else if (selectBody instanceof SetOperationList setOperationList) {
-                for (Select select : setOperationList.getSelects()) addWhere(select.getPlainSelect(), page, pe.getKey());
+                for (Select select : setOperationList.getSelects()) addWhere(select.getPlainSelect(), page, name);
                 sql = setOperationList.toString();
             }
             b = new StringBuilder();
@@ -108,7 +109,7 @@ public class DynamicSqlSource implements SqlSource {
         int           i  = 0, z = page.orders().size();
         for (OrderItem o : page.orders()) {
             Column           c = new Column(o.getColumn());
-            String           n = "%s.orders[%d].value".formatted(name, i);
+            String           n = "%sorders[%d].value".formatted(name == null ? "" : name + ".", i);
             MyBatisParameter p = new MyBatisParameter(n);
             Expression       w = o.isAsc() ? new GreaterThan(c, p) : new MinorThan(c, p);
             if (++i < z) { a = new AndExpression(new EqualsTo(c, p), null); w = new ParenthesedExpressionList<>(new OrExpression(w, a)); }

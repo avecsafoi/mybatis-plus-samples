@@ -16,6 +16,7 @@
 package com.baomidou.mybatisplus.core.toolkit;
 
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Optional;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -48,9 +49,10 @@ public class ParameterUtils {
         return Optional.empty();
     }
     
-    public static Map.Entry<String, IPage<?>> findPageEntry(Object o) {
-        if (o instanceof Map<?, ?> m) for (Map.Entry<?, ?> e : m.entrySet()) if (e.getValue() instanceof IPage p) return Map.entry(e.getKey().toString(), p);
-        if (o instanceof IPage<?> p) return Map.entry("page", p);
+    @SuppressWarnings("unchecked")
+    public static Entry<String, IPage<?>> findPageEntry(Object o) {
+        if (o instanceof Map<?, ?> m) for (Map.Entry<?, ?> e : m.entrySet()) if (e.getValue() instanceof IPage<?>) return (Entry<String, IPage<?>>) e;
+        if (o instanceof IPage<?> p) return Map.entry(null, p);
         return null;
     }
     

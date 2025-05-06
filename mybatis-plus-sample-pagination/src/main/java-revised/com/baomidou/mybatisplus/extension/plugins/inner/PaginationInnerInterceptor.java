@@ -22,6 +22,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.Properties;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 import org.apache.ibatis.cache.CacheKey;
@@ -123,6 +124,8 @@ public class PaginationInnerInterceptor implements InnerInterceptor {
     public PaginationInnerInterceptor(DbType dbType) { this.dbType = dbType; }
     
     public PaginationInnerInterceptor(IDialect dialect) { this.dialect = dialect; }
+    
+    public static final Pattern P1 = Pattern.compile("(\\?)|(/\\*(?:\\*[^*/]|.)*\\*/)|(--[^\r\n]*)|('(?:''|[^'])*')|(\"(?:\"\"|[^\"])*\")");
     
     /**
      * 这里进行count,如果count为0这返回false(就是不再执行sql了)
